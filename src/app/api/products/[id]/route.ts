@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { products } from '@/lib/data';
 
-export async function GET(
+export async function generateStaticParams(
   request: Request,
   { params }: { params: { id: string } }
 ) {
